@@ -1,0 +1,18 @@
+
+package exercise2_9;
+
+import java.util.Scanner;
+
+public class Exercise2_9 {
+// a = (v1 - v0) / t
+    public static void main(String[] args) {
+        Scanner W = new Scanner(System.in);
+        System.out.print("Enter v0,v1,and t: ");
+        double v0 = W.nextDouble();
+        double v1 = W.nextDouble();
+        double t = W.nextDouble();
+        double a = (v1 - v0) / t;
+        System.out.println("The average acceleration is " + a);
+    }
+    
+}

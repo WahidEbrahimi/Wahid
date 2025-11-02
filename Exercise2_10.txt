@@ -1,0 +1,20 @@
+
+package exercise2_10;
+
+import java.util.Scanner;
+
+public class Exercise2_10 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the amount of water in kilograms: ");
+        double waterMass = input.nextDouble();
+        System.out.print("Enter the initial temprature: ");
+        double initialTemp = input.nextDouble();
+        System.out.print("Enter the final temprature: ");
+        double finalTemp = input.nextDouble();
+        double energy = waterMass * (finalTemp - initialTemp) * 4181;
+        System.out.println("The energy needed is " + energy);
+    }
+    
+}

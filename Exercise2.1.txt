@@ -1,0 +1,14 @@
+
+package exercise2_1;
+import java.util.Scanner;
+public class Exercise2_1 {
+
+    public static void main(String[] args) {
+     Scanner input = new Scanner (System.in);
+     System.out.print("Enter degree in celcuius: ");
+     double celcius = input.nextDouble();
+     double fahrenheit = (9 / 5) * celcius + 32;
+     System.out.println(celcius + "celcius is " + fahrenheit + "fahrenheit");
+    }
+    
+}
