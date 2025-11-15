@@ -1,0 +1,27 @@
+
+package exercise3_7;
+import java.util.Scanner;
+
+public class Exercise3_7 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter an amount in double: ");
+        double amount = input.nextDouble();
+        int remainingamount = (int)(amount * 100);
+        int numberOfDollars = remainingamount / 100;
+        remainingamount = remainingamount % 100;
+        int numberOfQuarters = remainingamount % 25;
+        int numberOfDimes = remainingamount % 10;
+        int numberOfNickels = remainingamount % 5;
+        remainingamount = remainingamount % 5;
+        int numberOfPennies = remainingamount;
+        System.out.println("your amount" + amount + " connsist of: ");
+        System.out.println(" " + numberOfDollars + "dollars");
+        System.out.println(" " + numberOfQuarters + "quarters");
+        System.out.println(" " + numberOfDimes + "dimes");
+        System.out.println(" " + numberOfNickels + "nickels");
+        System.out.println(" " + numberOfPennies + "pennies");
+    }
+    
+}

@@ -1,0 +1,22 @@
+
+
+package exercise3_8;
+
+import java.util.Scanner;
+
+public class Exercise3_8 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter three integers: ");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int num3 = input.nextInt();
+        if (num1 > num2) {int t = num1; num1 = num2; num2 = t;}
+        if (num2 > num3) {int t = num2; num2 = num3; num3 = t;}
+        if (num1 > num2) {int t = num1; num1 = num2; num2 = t;}
+        System.out.println(num1 + " " + num2 + " " + num3);
+        }
+    }
+    
+

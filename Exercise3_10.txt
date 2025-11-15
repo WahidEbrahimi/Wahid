@@ -1,0 +1,20 @@
+
+package exercise3_10;
+
+import java.util.Scanner;
+public class Exercise3_10 {
+
+    public static void main(String[] args) {
+        int num1 = (int)(Math.random() * 100);
+        int num2 = (int)(Math.random() * 100);
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is" + num1 + "+" + num2 + "?");
+        int answer = input.nextInt();
+        if (answer == num1 + num2){
+            System.out.println("you are correct!");
+        }else{
+            System.out.println("your answer is wrong" + num1 + "+" + num2 + "=" +(num1+num2));
+        }
+    }
+    
+}

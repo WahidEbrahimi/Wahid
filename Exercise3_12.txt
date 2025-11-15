@@ -1,0 +1,22 @@
+
+package exercise3_12;
+
+import java.util.Scanner;
+public class Exercise3_12 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a three digit enteger: ");
+        int number = Math.abs(input.nextInt());
+        int hundreds = number / 100;
+        int tens = (number / 10) % 10;
+        int units = number % 10;
+        if(hundreds == units) {
+            System.out.println(number + "is palindrome");
+        }else{
+            System.out.println(number + "is not a palindrome");
+        }
+            
+    }
+    
+}

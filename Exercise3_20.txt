@@ -1,0 +1,28 @@
+
+package exercise3_20;
+import java.util.Scanner;
+
+public class Exercise3_20 {
+
+    public static void main(String[] args) {
+               Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Fahrenheit (-58 to 41): ");
+        double temp = input.nextDouble();
+
+        System.out.print("Enter wind speed in mph (>=2): ");
+        double speed = input.nextDouble();
+        if (temp < -58 || temp > 41) {
+            System.out.println("Invalid temperature");
+        } else if (speed < 2) {
+            System.out.println("Invalid wind speed");
+        } else {
+            double windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+            System.out.println("Wind-chill temperature is " + windChill);
+        }
+    }
+}
+ 
+    
+    
+

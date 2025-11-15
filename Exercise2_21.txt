@@ -1,0 +1,20 @@
+
+package exercise2_21;
+import java.util.Scanner;
+public class Exercise2_21 {
+
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter investment amount: ");
+      double investmentamount = input.nextDouble();
+      System.out.print("Enter annual interest rate in percentage: ");
+      double annualrate = input.nextDouble();
+      System.out.print("Enter the number of years: ");
+      int years = input.nextInt();
+      double monthlyrate = annualrate / 1200;
+      double futurevalue = investmentamount * Math.pow(1 + monthlyrate, years * 12);
+      System.out.println("Accumulated value is $" + futurevalue);
+      
+    }
+    
+}
